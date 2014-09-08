@@ -20,7 +20,7 @@ Angular application with modules, bundles, require.js and r.js
 
 ## Building application
 
-To build project (compile it into bundles, minify CSS and other cool things, that you can set up in `build.js`) type this into your shell (navigate to project folder)
+To build project (compile it into bundles, minify CSS, copy to `public` folder and other cool things, that you can set up in `build.js`) type this into your shell (navigate to project folder)
 
 #### Windows
 `r.js.cmd -o build.js`
@@ -28,6 +28,8 @@ To build project (compile it into bundles, minify CSS and other cool things, tha
 #### Mac/Linux
 `r.js -o build.js`
 
+Your build is located into `public` folder. 
+`index.html` is an entry point.
 
 ## Module examples
 
