@@ -4,7 +4,7 @@ define( [ 'angular', 'app' ], function( angular ) {
 
   angular
   .module( 'app.controllers' )
-  .controller( 'AppCtrl', ['$scope', function($scope) {
+  .controller( 'AppCtrl', ['$scope', function AppCtrl($scope) {
      
 
       $scope.currentUser  = 'HelloUser!';

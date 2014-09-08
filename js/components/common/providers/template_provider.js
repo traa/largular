@@ -31,7 +31,7 @@ define( [ 'angular', '../module' ], function( angular ) {
   angular
   .module( 'common.providers' )
   .provider( 'Template', [
-    function() {
+    function TemplateProvider() {
       var basePath = '';
       try {
         basePath = document.getElementsByTagName( 'base' )[ 0 ].href;

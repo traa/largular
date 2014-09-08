@@ -8,6 +8,9 @@
     removeCombined: true,
     findNestedDependencies: true,
     dir: "public",
+    skipDirOptimize: true,
+    //ignore all with dots
+    fileExclusionRegExp: /^\./,
     // packages: ['app'],
     modules: [
         {

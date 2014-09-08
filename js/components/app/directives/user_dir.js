@@ -3,7 +3,7 @@ define( [ 'angular', '../module' ], function( angular ) {
 
   angular
     .module( 'app.directives' )
-    .directive( 'user', ['Template', function(Template) {
+    .directive( 'user', ['Template', function UserDir(Template) {
       console.log(Template.view('app', 'user' ));
         return {
             restrict: 'E',

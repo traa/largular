@@ -3,7 +3,7 @@ define( [ 'angular', '../module' ], function( angular ) {
 
   angular
     .module( 'mymodule.directives' )
-    .directive( 'just', ['Template', function(Template) {
+    .directive( 'just', ['Template', function JustDirective(Template) {
 
         return {
             restrict: 'E',
