@@ -1,0 +1,686 @@
+@import url('/css/kendo.common.min.css');
+@import url('/css/kendo.rtl.min.css');
+@import url('/css/kendo.silver.min.css');
+@import url('/css/kendo.silver.mobile.min.css');
+@import url('/css/kendo.dataviz.min.css');
+@import url('/css/kendo.dataviz.default.min.css');
+
+
+
+/* Styles go here */
+    @font-face {
+font-family: Trade Gothic LT Standard;
+src: url("fonts/TradeGothicLTStd.otf") format("opentype");
+}
+body {
+    background: #E7E6E3;
+     font-family: 'Trade Gothic LT Standard';
+     min-width: 1280px;
+}
+
+p {
+     margin: 0 !important;
+}
+h2 {
+    color: #f69c44;
+}
+.ng-scope {
+    padding: 0;
+    margin: 0;
+}
+.header-menu {
+    display: block;
+    float: right;
+    position: relative;
+    top: -25px;
+}
+.k-menu .k-item, .k-widget.k-menu-horizontal > .k-item {
+    border: none !important;
+}
+.k-button.btnApllyProject {
+    background: none repeat scroll 0 0 #0087b3 !important;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+}
+.project-actions {
+    display: block;
+    float: right;
+    width: 200px;
+}
+.k-button.btnClearFilters {
+    background: none repeat scroll 0 0 #0087b3 !important;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.header-menu ul li {
+   color: #9c9c9d;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none outside none;
+    width: 50px;
+}
+.request-support {
+    background: none repeat scroll 0 0 #f48f2b;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    padding-left: 20px;
+    padding-top: 5px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    width: 155px;
+}
+.k-menu .k-animation-container .k-group {
+    margin-left: 0px;
+   
+}
+.k-tabstrip .k-state-active a {
+    color: #f69c44!important;
+}
+.k-tabstrip-items .k-loading.k-complete {
+    display: none;
+}
+.k-widget.k-header.k-tabstrip {
+    border: none !important;
+    background: transparent!important;
+    
+}
+.k-widget.k-header.k-tabstrip .k-link {
+    border: none !important;
+    background: transparent!important;
+    
+}
+.k-tabstrip-items .k-item {
+    display: inline-block!important;
+     border: none !important;
+    padding: 0!important;
+    background: transparent!important;
+}
+
+.search-panel {
+    background:#d8d6d2;
+    height: 50px;
+    width: 100%;
+}
+.main-header {
+
+    height: 120px;
+    width: 100%;
+    display: block;
+    background: #FFF;
+}
+.main-header .logo {
+    background-image: url("images/logo.jpg") !important;
+    height: 107px;
+    width: 263px;
+    margin-left: 20px;
+}
+.assinment-view-title {
+    color: #6c767d;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.projDescHolder span {
+    border: 1px solid #20C1DF;
+    border-left: 0px;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+.k-widget.k-listview {
+    border-color: transparent;
+    background: none repeat scroll 0 0 transparent;
+}
+.k-grid-content {
+    overflow: auto;
+
+}
+.k-grid-header {
+    padding-right: 0!important;
+}
+#example-projects {
+    min-width: 206px;
+    display: block;
+    height: 100%;
+    float: left; 
+    border-right: 1px solid #d8d6d2;
+
+}
+.projDescHolder{ display: inline-block;}
+    .projDescHolder span:first-child {
+        border: 1px solid #20C1DF;
+    }
+
+.k-grid .k-header {
+    display: none;
+}
+
+.k-i-collapse {
+    display: none;
+}
+
+.projDescHolder .quarterInfo {
+    color: #20C1DF;
+}
+
+.projDescHolder .formTypeInfo {
+    background: #0087B3;
+    color: white;
+}
+.addNewProject {
+    width: 500px;
+}
+.first-column {
+    display: block;
+    float: left;
+    width: 160px;
+    margin-top: 10px;
+}
+.second-column {
+     display: block;
+     float: left;
+     width: 160px;
+     margin-top: 10px;
+}
+.projDescHolder .yearInfo {
+    background: #20C1DF;
+    color: white;
+}
+
+.projName {
+    color: #20C1DF;
+}
+
+.managerName {
+    color: #96A0A5;
+}
+
+.rowItem,
+.rowItem td {
+    border: 0px;
+}
+
+.rowItem:hover,
+.rowItem.k-state-selected:hover {
+        background: #AFE9F4;
+    }
+
+.rowItem.k-state-selected {
+        background: none;
+    }
+.projectsGridHolder {
+    margin-left: 20px;
+    margin-top: 35px;
+}
+    .projectsGridHolder .k-grid {
+        width: 175px;
+    }
+.projectsGridHolder .k-button:focus:not(.k-state-disabled):not([disabled]){
+	background-color:#f48f2b;
+	color:#FFF;
+	border: medium none;
+	box-shadow:none;
+}
+.projectsGridHolder .k-menu .k-icon {
+     background-image: url("images/sprite.png")!important;
+    border-color: transparent;
+    background-position: 0!important;
+}
+.projectsGridHolder .k-button {
+    background-color: #f48f2b;
+    color: #FFF;
+    border: medium none;
+    box-shadow: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 1;
+    background-image: none;
+}
+.projectsGridHolder .k-popup {
+    border: none;
+}
+.projectsGridHolder .k-pager-wrap {
+    border-top:3px solid #20c1df;
+    padding-left: 15px;
+}
+.projectsGridHolder .k-link.k-state-active {
+    background: #20c1df;
+    color: #ffffff;
+    border: none;
+}
+.peopleGridHolder .k-link.k-state-active {
+    background: #20c1df;
+    color: #ffffff;
+    border: none;
+}
+.projectsGridHolder .k-grid-header-wrap {
+    height: 3px;
+   height: 3px;
+     background: none repeat scroll 0 0 #20c1df;
+}
+.projectsGridHolder .k-button:focus{
+	background-color:#f48f2b;
+	color:#FFF;
+	border: medium none;
+	box-shadow:none;
+}
+.projectsGridHolder .k-menu {
+    border: 0;
+}
+.projectsGridHolder .k-button{
+	background-color:#f48f2b;
+	color:#FFF;
+    font-size: 12px;
+	border: medium none;
+	box-shadow:none;
+}
+.projectsGridHolder td {
+    padding-left: 10px; 
+
+}
+.projectsGridHolder .k-grouping-row tr,
+.projectsGridHolder .k-grouping-row td {
+    background: #E9F9FC;
+    border: 0px;
+    color: #AEBBC0;
+}
+
+.sortByPopup {
+    padding: 10px;
+    width: 385px;
+    height: 160px;
+    background: #E7EEF4;
+    border-top: 5px solid #20C1DF;
+    border-bottom: 5px solid #20C1DF;
+}
+.filterByPopup .k-header {
+
+    display: block;
+}
+.filterByPopup {
+    padding: 10px;
+    width: 385px;
+    height: 160px;
+    background: #E7EEF4;
+    border-top: 5px solid #20C1DF;
+    border-bottom: 5px solid #20C1DF;
+}
+.projectsGridHolder .sortByPopup .k-primary {
+    background: #FFF;
+    background-image: none;
+    color: #20c1df;
+    border: none;
+    margin-top: 50px; 
+}
+.sortByPopup .k-item {
+    border: none!important;
+}
+.sortByPopup #listView {
+
+    border: 1px solid #6c8090;
+    background: #FFF;
+    width: 120px;
+    height: 105px;
+    margin-right: 10px;
+    padding: 5px;
+}
+.sortByPopup span
+ {
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    color: #9ca5ac;
+    display: block;
+}
+#example-assignments {
+    display: block;
+    min-width: 600px;
+    max-width: 1450px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 35px;
+    width: 65%;
+}
+
+h1 {
+    margin: 0 5px;
+    padding: 0 ;
+    color: #f69c44;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+     width: auto;
+    display: block;
+    float: left;
+}
+.assignmentsGridHolder .edit-menu {
+    background-color: transparent!important;
+    border: none;    
+
+}
+.assignmentsGridHolder .k-button:focus:not(.k-state-disabled):not([disabled]){
+	background-color:#f48f2b;
+	color:#FFF;
+	border: medium none;
+	box-shadow:none;
+}
+.assignmentsGridHolder .k-button:focus{
+	background-color:#f48f2b;
+	color:#FFF;
+	border: medium none;
+	box-shadow:none;
+}
+.assignmentsGridHolder td {
+    line-height: 1.5;
+    padding-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eeeff0;
+}
+.assignmentsGridHolder .k-menu {
+    border: 0;
+}
+.assignmentsGridHolder .k-button{
+	background-color:#f48f2b;
+	color:#FFF;
+    font-size: 12px;
+	border: medium none;
+	box-shadow:none;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 1;
+    background-image: none;
+}
+
+span.title {
+    background: #FFF;
+    color: #bec8d0;
+    width: 100%;
+	line-height: 40px;
+    height: 40px;
+    font-size: 20px;
+    left: 10px;
+    display: block;
+}
+
+span.second-title {
+    background: #e7eef4;
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+
+span.assinmentTo {
+    display: block;
+    float: left;
+    width: auto;
+    color: #333333;
+}
+
+span.dueByInfo {
+    display: block;
+    float: left;
+    width: auto;
+    margin-left: 5px;
+    color: #333333;
+}
+
+span.clear-filter {
+    background: #afe9f4;
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+
+.assignmentsGridHolder .k-selectable tr {
+    border-top: 1px solid #eeeff0;
+    border-bottom: 1px solid #eeeff0;
+}
+
+.assignmentsGridHolder .k-grid .k-header, .assignmentsGridHolder .k-grid-header-wrap {
+    display: block;
+    background: #20c1df;
+    border: 0 none ;
+    color: white;
+    height: 40px;
+}
+
+.assignmentsGridHolder .k-grid-header {
+    background: #20c1df;
+}
+
+.assignmentsGridHolder .k-group {
+    width: 130px;
+    background: none ;
+    border: none ;
+}
+.assignmentsGridHolder .k-grid-content {
+     box-shadow: 0 0 0 1px #a2adb8;
+}
+.assignmentsGridHolder .k-group .k-item:hover {
+    background: none ;
+    border: none ;
+}
+
+.assignmentsGridHolder .k-group .k-item {
+    display: block ;
+    float: left ;
+    width: 20px;
+    background: none ;
+    border: none ;
+}
+.assignmentsGridHolder .k-group .k-item{
+    display: block;
+    width: 20px;
+   
+     padding-left: 6px;
+     padding-top: 7px;
+    
+}
+.assignmentsGridHolder .k-popup, .k-menu .k-group {
+    box-shadow: none ;
+
+}
+.assignmentsGridHolder .k-menu .k-item.k-state-hover {
+    background: none ;
+    background-color: transparent ;
+    border: none ;
+}
+.assignmentsGridHolder .k-menu .k-animation-container .k-item .k-link {
+    padding: 0 ;
+    margin: 0 ;
+    background: none ;
+    border: none ;
+}
+.createAssigmentForm #listViewPeople {
+    display: block;
+    float: left;
+    width: 350px;
+   
+
+}
+.createAssigmentForm #listViewFilter {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+
+}
+.assignmentsGridHolder .edit-menu {
+    display: block;
+    float: right;
+    width: 20px;
+}
+
+.assignmentsGridHolder ul.edit-menu {
+    display: block ;
+    position: relative;
+    right: 19px;
+    top: 5px;
+    background: none ;
+}
+
+.assignmentsGridHolder .edit-menu .k-icon {
+    display: none;
+}
+
+.assignmentsGridHolder .k-grid-header .k-header:first-child, .k-grid th:first-child {
+    width: 290px;
+}
+
+.assignmentsGridHolder .k-toolbar {
+    display: none;
+}
+
+.assignmentsGridHolder .k-i-collapse {
+    display: none;
+}
+
+.assignmentsGridHolder .assinmentName {
+    color: #20c1df;
+    font-weight: bold;
+}
+
+.assignmentsGridHolder .k-grid-header table {
+    border: 0px; /* border="0" */
+    border-collapse: collapse; /* cellspacing="0" */
+}
+
+    .assignmentsGridHolder .k-grid-header table tr {
+        padding: 0px; /* cellpadding="0" */
+    }
+
+.assignmentsGridHolder .rowItem:hover,
+.assignmentsGridHolder .rowItem.k-state-selected:hover {
+    background: #AFE9F4;
+}
+
+.assignmentsGridHolder .rowItem.k-state-selected {
+    background: none;
+}
+
+.assignmentsGridHolder .k-grouping-row tr,
+.assignmentsGridHolder .k-grouping-row td {
+    background: #E9F9FC;
+    border: 0px;
+    color: #AEBBC0;
+}
+
+.createAssigmentForm #listViewPeople {
+    border: 1px solid #AEBBC0;   
+    padding: 5px;
+    margin-top: 5px; 
+}
+.createAssigmentForm #listViewFilter {
+    border: 1px solid #AEBBC0;   
+    padding: 5px;
+    margin-top: 5px; 
+}
+.assignmentsGridHolder .k-grid-pager, #grid .k-grid-header {
+    border: 0 ;
+}
+.peopleGridHolder {
+    float: right;
+    width: 175px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+.peopleName {
+    font-weight: bold;
+    color: #20c1df;
+}
+
+.peopleGridHolder .k-button:focus:not(.k-state-disabled):not([disabled]){
+	background-color:#f48f2b;
+	color:#FFF;
+	border: medium none;
+	box-shadow:none;
+}
+.peopleGridHolder .k-button:focus{
+	background-color:#f48f2b;
+	color:#FFF;
+	border: medium none;
+	box-shadow:none;
+}
+.peopleGridHolder .k-button{
+	background-color:#f48f2b;
+	color:#FFF;
+    font-size: 14px;
+	border: medium none;
+	box-shadow:none;
+}
+.peopleGridHolder .k-grid-header-wrap {
+    height: 3px;
+     background: none repeat scroll 0 0 #20c1df;
+}
+.peopleGridHolder td {
+    border-bottom: 2px solid #e7e6e3;
+    height: 0 !important;
+    line-height: 1;
+    padding-left: 10px;
+}
+.peopleGridHolder .k-pager-wrap {
+    border-top:3px solid #20c1df;
+   
+}
+.peopleGridHolder .k-menu {
+    border: 0;
+}
+.createPeopleForm { margin-top: 15px;}
+.peopleGridHolder .k-menu .k-icon {
+     background-image: url("images/sprite.png")!important;
+    border-color: transparent;
+    background-position: 0!important;
+}
+.peopleGridHolder .k-popup {
+    border: none;
+}
+.peopleGridHolder .k-button {
+    background-color: #f48f2b;
+    color: #FFF;
+    border: medium none;
+    box-shadow: none;
+    font-size: 12px;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 1;
+    background-image: none;
+}
+.peopleGridHolder .sortByPopup .k-primary {
+    background: #FFF;
+    background-image: none;
+    color: #20c1df;
+    border: none;
+    margin-top: 50px; 
+}
+.example-people {
+    min-width: 206px;
+    display: block;
+    height: 100%;
+    float: right;
+    position: relative;
+    border-left: 1px solid #d8d6d2;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1700px) {
+#example-assignments {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2000px) {
+    #example-assignments {
+        width: 75% !important;
+    }
+}

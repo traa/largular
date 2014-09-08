@@ -1,0 +1,4 @@
+define([
+    "angular",
+    "ngRoute"
+], function() { });
