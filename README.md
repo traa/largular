@@ -37,4 +37,4 @@ Your build is located into `public` folder.
 
 ## Application workflow
 
-![Structure of app](https://lh3.googleusercontent.com/kMzs6OLyCZkXVXmiwakDCOwBa7hvXC4raoPOPzxA05fc9jhA4FPyk3HcOkVg1skUIeW4Mg=w1896-h875)
+![Structure of app](https://dl-web.dropbox.com/get/structure.png?_subject_uid=50565367&w=AAD1tc4di3goGeMJyPkAueWHl-AlO0vAGWhkcFAM0PSG5A)
