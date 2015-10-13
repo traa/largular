@@ -54,6 +54,7 @@ Your build is located in `public` folder.
 1. Run it. This includes compiling and starting server.
 2. Implement basic search for an artist and displaying list of artists on main page of application, using [Spotify API](https://developer.spotify.com/web-api/search-item/)
 
+You can fork this repo and commit your code, so updates are easily tracked.
 Feel free to modify an app as you want and ask any questions to skype **truthatenvy**
 
 Optional:
