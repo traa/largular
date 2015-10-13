@@ -9,7 +9,9 @@ Installing dependencies
 `npm install`
 
 Running server
+
 Processed by rjs `node public/server.js`
+
 Development mode `node public/server.js`
 
 
@@ -58,5 +60,6 @@ You can fork this repo and commit your code, so updates are easily tracked.
 Feel free to modify an app as you want and ask any questions to skype **truthatenvy**
 
 Optional:
+
 1. Remove blinking effect on page load
 2. Add gulp/grunt task, that will automatically rebuild application and start a node server 
