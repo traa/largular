@@ -3,14 +3,25 @@
     optimizeCss: "standard.keeplines",
     //turn off optimization for now
     optimize: "none",
-    mainConfigFile : "js/main.js",
-    baseUrl: "js",
+    mainConfigFile : "./js/main.js",
+    baseUrl: "./js",
     removeCombined: true,
     findNestedDependencies: true,
-    dir: "public",
+    dir: "./public",
     skipDirOptimize: true,
     //ignore all with dots
-    fileExclusionRegExp: /^\./,
+    fileExclusionRegExp: "/" + [
+        "^\\.",             //files that start with .
+        "node_modules",     //nodejs stuff
+        "\\.css$",            //CSS files
+        "\\.scss$",           //SCSS files (sass)
+        "build\\.js",       //r.js config
+        "package\\.json",   //nodejs stuff
+        "gulpfile\\.js",    //gulp config
+        "^r.js$",           //r.js module
+        "JSLintNet.*",      //JSLint settings
+        "mm"
+    ].join('|') + "/",
     // packages: ['app'],
     modules: [
         {
