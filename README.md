@@ -54,10 +54,14 @@ Your build is located in `public` folder.
 ## So, what's the goal?
 
 1. Run it. This includes compiling and starting server.
-2. Implement basic search for an artist and displaying list of artists on main page of application, using [Spotify API](https://developer.spotify.com/web-api/search-item/)
+2. Implement list of coming soon movies on main page using [Metacritic API](https://market.mashape.com/byroredux/metacritic-v2#get-coming-soon-movie-list)
+3. Implement movie search using [same Metacritic API](https://market.mashape.com/byroredux/metacritic-v2#search-movies)
 
 You can fork this repo and commit your code, so updates are easily tracked.
 Feel free to modify an app as you want and ask any questions to skype **truthatenvy**
+
+##Rules
+1. No third-party services.
 
 Optional:
 
